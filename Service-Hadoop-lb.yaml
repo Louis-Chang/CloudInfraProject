@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: Hadoop
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 
+      protocol: TCP
+      targetPort: 
+  selector:
+    app: Hadoop
